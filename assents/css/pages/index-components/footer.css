@@ -1,0 +1,31 @@
+/* assets/css/components/footer.css */
+
+/* Estilos para os links sociais mais minimalistas */
+.social-links-minimal a {
+    transition: color 0.3s ease; /* Transição suave na cor */
+    /* Removido padding, border, etc., para um visual mais simples */
+}
+
+.social-links-minimal a:hover {
+    color: var(--bs-primary) !important; /* Muda a cor para a primária do Bootstrap no hover */
+    /* Removido background e border no hover */
+}
+
+.social-links-minimal i {
+    /* Ajustes específicos para os ícones se necessário */
+    color: var(--bs-white); /* Garante que os ícones sejam brancos inicialmente */
+    transition: color 0.3s ease;
+}
+
+.social-links-minimal a:hover i {
+    color: var(--bs-primary) !important; /* Muda a cor do ícone no hover */
+}
+
+/* Remova qualquer outro CSS do footer que esteja duplicando o Bootstrap
+   ou criando estilos que você não quer mais. */
+
+/* Se o logo img foi alterado de favicon.svg para logo.png, e o logo.png
+   não tem o filter invertido de fábrica, você pode adicionar este CSS: */
+.footer img {
+    filter: brightness(0) invert(1);
+}

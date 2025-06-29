@@ -1,0 +1,32 @@
+/* sobre.css */
+
+.about-hero {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.about-hero h1 {
+    font-size: var(--font-size-xxl);
+    color: var(--color-text-light);
+}
+
+.about-hero p {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-light);
+}
+
+.about-content-section img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.about-content-section .card {
+    border: 1px solid var(--color-border);
+}
+
+.about-content-section .card i {
+    font-size: 3.5rem;
+}

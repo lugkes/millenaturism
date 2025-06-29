@@ -1,0 +1,108 @@
+/* header.css */
+.main-header {
+    background-color: var(--color-background-light);
+    padding: var(--spacing-sm) 0;
+    box-shadow: var(--shadow-light);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .logo {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-text-dark);
+}
+
+.main-header .logo img {
+    height: 40px; /* Ajuste o tamanho do logo */
+    margin-right: var(--spacing-xs);
+}
+
+.main-nav .nav-list {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.main-nav .nav-link {
+    padding: var(--spacing-xs) 0;
+    position: relative;
+    color: var(--color-text-dark);
+    font-weight: 500;
+}
+
+.main-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.main-nav .nav-link:hover::after,
+.main-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none; /* Esconde o botão de menu em telas maiores */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-xs);
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-text-dark);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsividade para o menu */
+@media (max-width: 768px) {
+    .main-nav .nav-list {
+        display: none; /* Esconde a lista de navegação por padrão */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-background-light);
+        box-shadow: var(--shadow-light);
+        padding: var(--spacing-md) 0;
+        z-index: 999;
+    }
+
+    .main-nav .nav-list.open {
+        display: flex; /* Mostra a lista quando a classe 'open' é adicionada */
+    }
+
+    .main-nav .nav-item {
+        text-align: center;
+        margin: var(--spacing-xs) 0;
+    }
+
+    .main-nav .nav-link {
+        padding: var(--spacing-sm);
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o botão de menu */
+    }
+}

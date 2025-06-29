@@ -1,0 +1,34 @@
+/* variables.css */
+:root {
+    /* Cores */
+    --color-primary: #007BFF; /* Azul turquesa/royal para um toque luxuoso */
+    --color-secondary: #FFD700; /* Dourado suave */
+    --color-accent: #FF6347; /* Coral suave para destaque */
+    --color-text-dark: #333;
+    --color-text-light: #f4f4f4;
+    --color-background-light: #ffffff;
+    --color-background-dark: #222;
+    --color-border: #eee;
+
+    /* Fontes */
+    --font-heading: 'Source Sans 3', serif; /* Elegante */
+    --font-body: 'Open Sans', italic; /* Legível */
+
+    /* Espaçamentos */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2.5rem;
+    --spacing-xl: 4rem;
+
+    /* Tamanhos de Fonte */
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 3rem;
+
+    /* Bordas e Sombras */
+    --border-radius: 5px;
+    --shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

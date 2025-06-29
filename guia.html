@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millena Turismo | Guia de Destinos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assents/css/global/global.css">
+    <link rel="stylesheet" href="assents/css/pages/guia.css">
+    <link rel="stylesheet" href="assets/css/pages/guia.css"> <link rel="icon" href="assents/imgs/favicon.svg" type="image/png">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assents/imgs/favicon.svg" alt="Millena Turismo Logo" class="me-2" style="height: 40px;">
+                <span class="logo-text fw-bold">Millena Turismo</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pacotes.html">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="guia.html">Guia de Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-5 pt-5">
+        <section class="guia-hero py-5 text-center text-white" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('assents/imgs/hero-backgroud.jpg'); background-size: cover; background-position: center;">
+            <div class="container">
+                <h1 class="display-4 fw-bold mb-3">Guia de Destinos Millena Turismo</h1>
+                <p class="lead">Inspire-se e planeje sua próxima aventura com nossos guias completos.</p>
+            </div>
+        </section>
+
+        <section class="destinos-grid py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 display-6 fw-bold text-primary">Explore Nossos Guias</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assents/imgs/destinos/paris.jpg" class="card-img-top" alt="Paris" style="height: 200px; object-fit: cover;">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h3 class="card-title text-primary fs-4 fw-bold">Guia Completo de Paris</h3>
+                                <p class="card-text text-muted">Descubra a magia da Cidade Luz:
+                                     pontos turísticos, gastronomia, 
+                                     cultura e dicas de viagem.</p>
+                                <a href="#" class="btn btn-primary btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#guiaParisModal">Ler Guia</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assents/imgs/destinos/maldivas.jpg" class="card-img-top" alt="Maldivas" style="height: 200px; object-fit: cover;">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h3 class="card-title text-primary fs-4 fw-bold">Maldivas: Paraíso à Vista</h3>
+                                <p class="card-text text-muted">Tudo sobre as ilhas paradisíacas: mergulho, relaxamento e os melhores bangalôs.</p>
+                                <a href="#" class="btn btn-primary btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#guiaMaldivasModal">Ler Guia</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assents/imgs/destinos/tailandia.jpeg" class="card-img-top" alt="Tailândia" style="height: 200px; object-fit: cover;">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h3 class="card-title text-primary fs-4 fw-bold">Tailândia: Cultura e Aventura</h3>
+                                <p class="card-text text-muted">Templos antigos, mercados vibrantes e praias deslumbrantes.</p>
+                                <a href="#" class="btn btn-primary btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#guiaTailandiaModal">Ler Guia</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="cta-section bg-primary text-white text-center py-5">
+            <div class="container">
+                <h2 class="mb-4 display-6 fw-bold">Sugira seu Próximo Guia!</h2>
+                <p class="lead mb-5">Qual destino você gostaria de ver em nosso guia?</p>
+                <a href="contato.html" class="btn btn-light btn-lg text-primary">Envie sua Sugestão</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-5">
+       <div class="container">
+        <div class="row text-center text-md-start"> <div class="col-md-4 mb-4 mb-md-0">
+                <a href="index.html" class="d-inline-flex align-items-center mb-3 text-white text-decoration-none">
+                    <img src="assets/imgs/logo.png" alt="Millena Turismo Logo" class="me-2" style="height: 30px; filter: brightness(0) invert(1);">
+                    <span class="logo-text fs-5 fw-bold">Millena Turismo</span>
+                </a>
+                <p class="text-muted">Sua agência de viagens personalizada.</p>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="text-warning mb-3">Links Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                    <li class="mb-2"><a href="pacotes.html" class="text-white text-decoration-none">Pacotes</a></li>
+                    <li class="mb-2"><a href="guia.html" class="text-white text-decoration-none">Guia de Destinos</a></li>
+                    <li class="mb-2"><a href="sobre.html" class="text-white text-decoration-none">Sobre</a></li>
+                    <li class="mb-2"><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h5 class="text-warning mb-3">Contato</h5>
+                <p class="mb-1 text-muted">Email: contato@millenaturismo.com</p>
+                <p class="mb-3 text-muted">Telefone: (XX) XXXX-XXXX</p>
+                
+                <div class="d-flex flex-column align-items-center align-items-md-start social-links-minimal">
+                    <a href="#" class="text-white text-decoration-none mb-2 d-flex align-items-center">
+                        <i class="bi bi-facebook fs-5 me-2"></i> Facebook
+                    </a>
+                    <a href="#" class="text-white text-decoration-none mb-2 d-flex align-items-center">
+                        <i class="bi bi-instagram fs-5 me-2"></i> Instagram
+                    </a>
+                    <a href="#" class="text-white text-decoration-none d-flex align-items-center">
+                        <i class="bi bi-whatsapp fs-5 me-2"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-top border-secondary mt-4 pt-3 text-center">
+            <p class="mb-0 text-muted">&copy; 2025 Millena Turismo. Todos os direitos reservados.</p>
+        </div>
+    </div>
+            <div class="border-top border-secondary mt-4 pt-3 text-center">
+                <p class="mb-0 text-muted">&copy; 2025 Millena Turismo. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="guiaParisModal" tabindex="-1" aria-labelledby="guiaParisModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="guiaParisModalLabel">Guia Completo de Paris</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Bem-vindo à Cidade Luz!</h4>
+                    <p>Paris é um destino que encanta a todos com sua rica história, arquitetura deslumbrante e cultura vibrante. Prepare-se para se apaixonar por cada esquina.</p>
+                    <img src="assets/imgs/guia/paris-eiffel.jpg" class="img-fluid rounded my-3" alt="Torre Eiffel">
+                    <h5>Principais Atrações:</h5>
+                    <ul>
+                        <li>**Torre Eiffel:** O ícone de Paris, oferecendo vistas panorâmicas da cidade.</li>
+                        <li>**Museu do Louvre:** Lar da Mona Lisa e de milhares de obras de arte.</li>
+                        <li>**Catedral de Notre-Dame:** Obra-prima gótica (em reconstrução, mas ainda impressionante).</li>
+                        <li>**Arco do Triunfo e Champs-Élysées:** Onde a história e o luxo se encontram.</li>
+                        <li>**Montmartre e Sacré-Cœur:** Vistas artísticas e boêmias da cidade.</li>
+                    </ul>
+                    <h5>Gastronomia:</h5>
+                    <p>Não deixe de experimentar os croissants frescos, macarons, queijos e, claro, um bom vinho. Visite um bistrô tradicional para uma experiência autêntica.</p>
+                    <h5>Dicas de Viagem:</h5>
+                    <ul>
+                        <li>Use o metrô, é eficiente e fácil de usar.</li>
+                        <li>Reserve ingressos para as atrações com antecedência online para evitar filas.</li>
+                        <li>Explore os bairros a pé para descobrir joias escondidas.</li>
+                    </ul>
+                    <a href="pacotes.html#paris" class="btn btn-outline-primary mt-3">Ver Pacotes para Paris</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="guiaMaldivasModal" tabindex="-1" aria-labelledby="guiaMaldivasModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="guiaMaldivasModalLabel">Maldivas: Paraíso à Vista</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Boas-vindas ao Paraíso!</h4>
+                    <p>As Maldivas são o epítome do luxo e relaxamento, com águas cristalinas, bangalôs sobre o oceano e vida marinha espetacular.</p>
+                    <img src="assents/imgs/destinos/maldivas.jpg" class="img-fluid rounded my-3" alt="Bungalow nas Maldivas">
+                    <h5>Atrações e Atividades:</h5>
+                    <ul>
+                        <li>**Snorkeling e Mergulho:** Explore recifes de coral vibrantes e encontre tubarões, raias e tartarugas.</li>
+                        <li>**Relaxamento em Bangalôs:** Desfrute da privacidade e do luxo dos bangalôs sobre a água.</li>
+                        <li>**Spas de Luxo:** Tratamentos relaxantes com vistas incríveis.</li>
+                        <li>**Passeios de Barco:** Excursões ao pôr do sol ou para ilhas desertas.</li>
+                    </ul>
+                    <h5>Melhor Época para Visitar:</h5>
+                    <p>De novembro a abril, quando o clima é mais seco e ensolarado, ideal para atividades aquáticas.</p>
+                    <h5>Dicas de Viagem:</h5>
+                    <ul>
+                        <li>Escolha um resort que se alinhe ao seu estilo de viagem e orçamento.</li>
+                        <li>Prepare-se para o calor e a umidade.</li>
+                        <li>Respeite a cultura local, especialmente fora dos resorts.</li>
+                    </ul>
+                    <a href="pacotes.html#maldivas" class="btn btn-outline-primary mt-3">Ver Pacotes para Maldivas</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assents/js/global.js"></script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+/* contato.css */
+
+.contact-hero {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.contact-hero h1 {
+    font-size: var(--font-size-xxl);
+    color: var(--color-text-light);
+}
+
+.contact-hero p {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-light);
+}
+
+.contact-form-section .card {
+    border: 1px solid var(--color-border);
+}
+
+.map-section .ratio {
+    height: 450px; /* Altura fixa para o mapa */
+}
