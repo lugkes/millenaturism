@@ -1,19 +1,18 @@
-/* variables.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     /* Cores */
-    --color-primary: #007BFF; /* Azul turquesa/royal para um toque luxuoso */
-    --color-secondary: #FFD700; /* Dourado suave */
-    --color-accent: #FF6347; /* Coral suave para destaque */
-    --color-text-dark: #333;
+    --color-primary: #0460D9; 
+    --color-secondary: #0583F2;
+    --color-accent: #0597F2; 
+    --color-text-dark: #292929;
     --color-text-light: #f4f4f4;
     --color-background-light: #ffffff;
-    --color-background-dark: #222;
+    --color-background-dark: #83A603;
     --color-border: #eee;
 
     /* Fontes */
-    --font-heading: 'Source Sans 3', serif; /* Elegante */
-    --font-body: 'Open Sans', italic; /* Legível */
-
+    --font-heading: 'Oswald', Sans; 
+    --font-body: 'Montserrat', Montserrat;
     /* Espaçamentos */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
