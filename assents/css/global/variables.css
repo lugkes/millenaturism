@@ -11,7 +11,7 @@
     --color-secondary: #00B4D8;    /* Um azul ciano mais vibrante, para elementos de destaque */
     --color-accent: #90E0EF;       /* Um azul água muito claro, para microinterações ou destaques muito leves */
 
-    --color-text-dark: #ffffff;    /* Preto quase absoluto, para títulos e texto principal */
+    --color-text-dark: #000000;    /* Preto quase absoluto, para títulos e texto principal */
     --color-text-medium: #666666;  /* Um cinza médio, para parágrafos e textos secundários */
     --color-text-light: #F8F8F8;   /* Quase branco, para texto sobre fundos escuros */
 
