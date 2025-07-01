@@ -1,31 +1,131 @@
-/* assets/css/components/footer.css */
-
-/* Estilos para os links sociais mais minimalistas */
-.social-links-minimal a {
-    transition: color 0.3s ease; /* Transição suave na cor */
-    /* Removido padding, border, etc., para um visual mais simples */
+/*------------------------------------*/
+/* Footer Styling - Minimalist */
+/*------------------------------------*/
+.main-footer {
+    background-color: var(--color-background-gray); /* Fundo cinza muito claro para um toque suave */
+    color: var(--color-text-medium); /* Texto em cinza médio para discrição */
+    padding: var(--spacing-xxl) 0 var(--spacing-lg); /* Padding generoso: cima, laterais, baixo */
+    font-family: var(--font-body); /* Fonte do corpo para consistência */
+    font-size: var(--font-size-sm); /* Tamanho de fonte um pouco menor para o footer */
+    line-height: 1.6;
 }
 
-.social-links-minimal a:hover {
-    color: var(--bs-primary) !important; /* Muda a cor para a primária do Bootstrap no hover */
-    /* Removido background e border no hover */
+.main-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md); /* Padding lateral para responsividade */
+    display: grid; /* Usando Grid para um layout flexível e organizado */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colunas adaptáveis */
+    gap: var(--spacing-lg) var(--spacing-xl); /* Espaçamento entre as colunas e linhas */
+    text-align: left; /* Alinha o texto das colunas à esquerda */
 }
 
-.social-links-minimal i {
-    /* Ajustes específicos para os ícones se necessário */
-    color: var(--bs-white); /* Garante que os ícones sejam brancos inicialmente */
-    transition: color 0.3s ease;
+.footer-section {
+    margin-bottom: var(--spacing-md); /* Espaçamento entre seções em telas menores */
 }
 
-.social-links-minimal a:hover i {
-    color: var(--bs-primary) !important; /* Muda a cor do ícone no hover */
+.footer-section h3 {
+    font-size: var(--font-size-md); /* Títulos de seção um pouco maiores */
+    font-weight: var(--font-weight-semibold); /* Semibold para destaque suave */
+    color: var(--color-text-dark); /* Cor de texto mais escura para os títulos */
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase; /* Deixa os títulos em maiúsculas */
+    letter-spacing: 0.5px; /* Leve espaçamento entre letras */
 }
 
-/* Remova qualquer outro CSS do footer que esteja duplicando o Bootstrap
-   ou criando estilos que você não quer mais. */
+.footer-section .footer-nav-list,
+.footer-section .footer-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-/* Se o logo img foi alterado de favicon.svg para logo.png, e o logo.png
-   não tem o filter invertido de fábrica, você pode adicionar este CSS: */
-.footer img {
-    filter: brightness(0) invert(1);
+.footer-section .footer-nav-list li,
+.footer-section .footer-contact-list li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-section .footer-nav-list a,
+.footer-section .footer-contact-list a {
+    color: var(--color-text-medium);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: var(--spacing-xs) 0; /* Padding para área clicável */
+    display: inline-block; /* Para que o padding funcione */
+}
+
+.footer-section .footer-nav-list a:hover,
+.footer-section .footer-contact-list a:hover {
+    color: var(--color-primary); /* Destaca com a cor primária no hover */
+}
+
+/* Redes Sociais */
+.social-links {
+    display: flex;
+    gap: var(--spacing-md); /* Espaçamento entre ícones */
+    margin-top: var(--spacing-sm); /* Espaçamento acima dos links sociais */
+}
+
+.social-links a {
+    color: var(--color-text-medium); /* Ícones sociais em cinza médio */
+    font-size: var(--font-size-lg); /* Tamanho maior para os ícones */
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+    color: var(--color-primary); /* Cor primária no hover */
+    transform: translateY(-2px); /* Leve elevação no hover */
+}
+
+/* Seção de Copyright */
+.footer-bottom {
+    border-top: 1px solid var(--color-border); /* Borda superior sutil */
+    padding-top: var(--spacing-md);
+    margin-top: var(--spacing-lg); /* Espaço acima do copyright */
+    text-align: center; /* Centraliza o texto de copyright */
+    font-size: var(--font-size-xs); /* Texto menor para o copyright */
+    color: var(--color-text-medium); /* Cor discreta para o copyright */
+}
+
+.footer-bottom p {
+    margin: 0; /* Remove margem padrão de parágrafos */
+}
+
+/* Ajustes para o logo no footer (se houver) */
+.footer-logo {
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-logo img {
+    height: 40px; /* Tamanho do logo no footer */
+    width: auto;
+    filter: brightness(0.8); /* Deixa o logo um pouco mais escuro se for colorido, para combinar */
+}
+
+/*------------------------------------*/
+/* Responsividade do Footer */
+/*------------------------------------*/
+@media (max-width: 768px) {
+    .main-footer .container {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+        text-align: center; /* Centraliza tudo */
+    }
+
+    .footer-section h3 {
+        margin-top: var(--spacing-md); /* Espaçamento extra entre títulos */
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .social-links {
+        justify-content: center; /* Centraliza os ícones sociais */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-footer {
+        padding: var(--spacing-xl) 0 var(--spacing-md); /* Ajusta padding geral */
+    }
+    .footer-section h3 {
+        font-size: var(--font-size-sm); /* Títulos menores em telas muito pequenas */
+    }
 }

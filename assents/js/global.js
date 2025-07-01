@@ -8,6 +8,20 @@ document.addEventListener('DOMContentLoaded', () => {
             navList.classList.toggle('open');
           
         });
+        
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.querySelector('.main-header');
+            const scrollThreshold = 50; 
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > scrollThreshold) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
 
        
         navList.querySelectorAll('.nav-link').forEach(link => {

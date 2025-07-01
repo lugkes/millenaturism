@@ -1,33 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); /* Adicionado Oswald para o font-heading */
+
+
 :root {
     /* Cores */
-    --color-primary: #0460D9; 
-    --color-secondary: #0583F2;
-    --color-accent: #0597F2; 
-    --color-text-dark: #292929;
-    --color-text-light: #f4f4f4;
-    --color-background-light: #ffffff;
-    --color-background-dark: #83A603;
-    --color-border: #eee;
+    --color-primary: #0077B6;      /* Um azul médio, profissional e confiável (similar ao de companhias aéreas) */
+    --color-primary-dark: #004D77; /* Versão mais escura do primário, para hover/foco */
+    --color-primary-light: #66B3D9; /* Versão mais clara, para backgrounds sutis ou acentos */
+
+    --color-secondary: #00B4D8;    /* Um azul ciano mais vibrante, para elementos de destaque */
+    --color-accent: #90E0EF;       /* Um azul água muito claro, para microinterações ou destaques muito leves */
+
+    --color-text-dark: #333333;    /* Preto quase absoluto, para títulos e texto principal */
+    --color-text-medium: #666666;  /* Um cinza médio, para parágrafos e textos secundários */
+    --color-text-light: #F8F8F8;   /* Quase branco, para texto sobre fundos escuros */
+
+    --color-background-light: #FFFFFF; /* Branco puro, para a maioria dos fundos */
+    --color-background-gray: #F5F5F5;  /* Um cinza muito, muito claro, para seções alternadas */
+    --color-background-dark: #222222;  /* Um cinza escuro sutil, para rodapés ou seções de alto contraste */
+
+    --color-border: #E0E0E0;       /* Um cinza claro para bordas e divisores */
+    --color-border-light: #F0F0F0; /* Uma borda ainda mais clara para sutileza extrema */
 
     /* Fontes */
-    --font-heading: 'Oswald', Sans; 
-    --font-body: 'Montserrat', Montserrat;
-    /* Espaçamentos */
+    --font-heading: 'Oswald', sans-serif; /* Usando Oswald como importado */
+    --font-body: 'Montserrat', sans-serif; /* Usando Montserrat como importado */
+
+    /* Espaçamentos (Mantidos, pois são bons para minimalismo) */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2.5rem;
     --spacing-xl: 4rem;
+    --spacing-xxl: 6rem; /* Adicionado para maior espaçamento em seções */
 
-    /* Tamanhos de Fonte */
+    /* Tamanhos de Fonte (Adicionados mais tamanhos para flexibilidade) */
+    --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
     --font-size-md: 1rem;
     --font-size-lg: 1.25rem;
-    --font-size-xl: 2rem;
-    --font-size-xxl: 3rem;
+    --font-size-xl: 1.75rem;
+    --font-size-xxl: 2.5rem;
+    --font-size-xxxl: 3.5rem; /* Para títulos de hero grandes */
 
-    /* Bordas e Sombras */
-    --border-radius: 5px;
-    --shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Pesos de Fonte (Adicionados mais pesos para tipografia refinada) */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Bordas e Sombras (Ajustados para minimalismo) */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+
+    --shadow-small: 0 1px 3px rgba(0, 0, 0, 0.08); /* Sombra bem leve */
+    --shadow-medium: 0 4px 10px rgba(0, 0, 0, 0.12); /* Um pouco mais visível */
+    --shadow-strong: 0 8px 20px rgba(0, 0, 0, 0.15); /* Apenas para destaque extremo */
 }
